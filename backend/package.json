@@ -1,0 +1,29 @@
+{
+  "name": "linguas-backend",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --exec node ./src/index.js",
+    "start": "node ./src/index.js",
+    "migrate": "node ./src/migrations/run_sqlite_schema.js",
+    "seed": "node ./src/seed/initialData.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1400.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 240 64" role="img" aria-label="Línguas de Angola logo">
+  <title>Línguas de Angola</title>
+  <rect width="240" height="64" rx="12" fill="#f7f7f7"/>
+  <g transform="translate(12,8)">
+    <rect width="48" height="48" rx="8" fill="#fdd835"/>
+    <circle cx="24" cy="24" r="14" fill="#2e7d32"/>
+  </g>
+  <text x="80" y="40" font-family="system-ui, sans-serif" font-size="20" fill="#111">Línguas de Angola</text>
+</svg>
