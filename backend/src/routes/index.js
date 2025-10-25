@@ -10,6 +10,6 @@ router.use('/messages', require('./messages'));
 router.use('/posts', require('./posts'));
 router.use('/files', require('./files'));
 router.use('/notifications', require('./notifications'));
-router.use('/profile', require('./users'));
+router.use('/users', require('./users'));
 
 module.exports = router;

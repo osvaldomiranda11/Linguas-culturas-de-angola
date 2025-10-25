@@ -52,4 +52,4 @@ function translate(text, fromLang, toLang) {
   return { translatedText: out, confidence: 0.6 };
 }
 
-module.exports = { translate };
+module.exports = translate;

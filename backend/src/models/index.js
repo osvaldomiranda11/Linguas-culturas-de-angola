@@ -2,7 +2,6 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const dotenv = require('dotenv');
 dotenv.config();
-
 const DATABASE_URL = process.env.DATABASE_URL || 'sqlite:./database.sqlite';
 
 const sequelize = new Sequelize(DATABASE_URL, {
@@ -31,7 +30,7 @@ Message.belongsTo(User, { foreignKey: 'sender_id', as: 'sender' });
 Message.belongsTo(User, { foreignKey: 'receiver_id', as: 'receiver' });
 Message.belongsTo(Group, { foreignKey: 'group_id', as: 'group' });
 
-Group.belongsToMany(User, { through: 'GroupMembers', foreignKey: 'groupId', otherKey: 'userId', as: 'members' });
+Group.belongsToMany(User, { through: 'GroupMembers', foreignKey: 'groupId', otherKey: 'userId', as: 'groupMembers' });
 
 User.hasMany(Notification, { foreignKey: 'user_id', as: 'notifications' });
 Notification.belongsTo(User, { foreignKey: 'user_id' });
